@@ -57,6 +57,7 @@ window.deleteSelectedAction = (id) => {
     if (delAction) {
         manager.deleteAction(id)
         console.log(manager.actions);
+        showActionsInTable();
     } else {
         alert("something went wrong!")
     }
